@@ -1,0 +1,15 @@
+{
+  "resources": [
+    {
+      "path": "src/Makefile-mdh",
+      "type": "makefile",
+      "params": {
+        "variable": "MDH_VERSION"
+      }
+    },
+    {
+      "path": "CHANGELOG.md",
+      "type": "keep-a-changelog"
+    }
+  ]
+}
