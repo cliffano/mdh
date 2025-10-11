@@ -10,7 +10,8 @@ lint:
 test:
 	cd examples/ansible-role/ && \
 	  make -f ../../src/Makefile-mdh ci update-to-latest update-to-main && \
-	  make -f ../../src/Makefile-mdh update-to-version TARGET_MDH_VERSION=main
+	  make -f ../../src/Makefile-mdh update-to-version TARGET_MDH_VERSION=main && \
+	  rm -f Makefile
 
 release-major:
 	rtk release --release-increment-type major
