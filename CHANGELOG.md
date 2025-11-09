@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 - Upgrade Python deps to latest
+- Upgrade Molecule setup to support latest Molecule 25.9
 
 ### Fixed
 - Fix missing header separator on yamllint config
