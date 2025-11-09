@@ -5,8 +5,8 @@ jobs:
   build:
     runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@v4
-      - uses: iamsauravsharma/create-dotenv@v2.0.1
+      - uses: actions/checkout@v5
+      - uses: iamsauravsharma/create-dotenv@v4.0.0
         with:
           file-path: '/tmp/.env'
         env:
@@ -14,7 +14,7 @@ jobs:
       - uses: cliffano/command-docker-action@main
         with:
           command: 'make ci'
-          image: cliffano/kon-tiki:3.9.0
+          image: cliffano/studio:2.16.0
           extra_path: '/root/.local/bin:/root/go/bin:/usr/local/go/bin:/usr/local/node/bin'
           shell: bash
           env_file: '/tmp/.env'
