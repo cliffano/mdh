@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add .ansible and .git to yamllint ignore list
 
 ### Changed
+- Replace molecule lint with ansible-lint and yamllint
 - Upgrade Python deps to latest
 - Upgrade Molecule setup to support latest Molecule 25.9
 
